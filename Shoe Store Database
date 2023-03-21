@@ -1,0 +1,23 @@
+--Create a shoe store database.
+
+CREATE TABLE shoes (id INTEGER PRIMARY KEY, brand TEXT, size TEXT, color TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO shoes VALUES (1, "Nike", 12, "Black", 50, 120);
+INSERT INTO shoes VALUES (2, "Reebok", 10, "Blue", 34, 80);
+INSERT INTO shoes VALUES (3, "New Balance", 9, "Grey", 87, 90);
+INSERT INTO shoes VALUES (4, "Vans", 7, "Red", 40, 70);
+INSERT INTO shoes VALUES (5, "K-Swiss", 11, "White", 40, 35);
+INSERT INTO shoes VALUES (6, "Converse", 10, "Black and Orange", 12, 44);
+INSERT INTO shoes VALUES (7, "Adidas", 12, "Black", 34, 100);
+INSERT INTO shoes VALUES (8, "Polo Boots", 12, "Brown", 23, 120);
+INSERT INTO shoes VALUES (9, "Timberland", 10, "Brown", 12, 150);
+INSERT INTO shoes VALUES (10, "Nike Slides", 12, "Black and White", 100, 25);
+INSERT INTO shoes VALUES (11, "Shaq's", 10, "Red", 120, 10);
+INSERT INTO shoes VALUES (12, "Jordan", 12, "Black and Red", 23, 220);
+INSERT INTO shoes VALUES (13, "Steven Madden", 10, "Black", 50, 35);
+INSERT INTO shoes VALUES (14, "Tom Ford", 07, "Blue", 20, 100);
+INSERT INTO shoes VALUES (15, "Ice Cream", 12, "Green", 50, 100);
+
+--Display the database ordered by price.
+
+SELECT * FROM shoes ORDER BY price desc
